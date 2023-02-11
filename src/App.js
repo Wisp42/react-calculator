@@ -36,6 +36,12 @@ function App() {
       nums_stack.push(parseFloat(buffer));
       Result();
       setValue(buffer);
+    } else if (type == 'clear') {
+      buffer = '';
+      output = '';
+      nums_stack = [];
+      actions_stack = [];
+      setValue('0');
     }
   }
 
@@ -78,6 +84,7 @@ function App() {
         action_func={divisionNums}
       />
       <CalcButton btn_value={'='} reader={readAction} btn_type={'result'} />
+      <CalcButton btn_value={'C'} reader={readAction} btn_type={'clear'} />
     </div>
   );
 
