@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
+      <h1>React Calculator</h1>
       <p>{value}</p>
       <CalcButton btn_value={1} reader={readAction} btn_type={'digit'} />
       <CalcButton btn_value={2} reader={readAction} btn_type={'digit'} />
@@ -59,6 +59,7 @@ function App() {
       <CalcButton btn_value={8} reader={readAction} btn_type={'digit'} />
       <CalcButton btn_value={9} reader={readAction} btn_type={'digit'} />
       <CalcButton btn_value={0} reader={readAction} btn_type={'digit'} />
+      <CalcButton btn_value={'.'} reader={readAction} btn_type={'digit'} />
       <CalcButton
         btn_value={'+'}
         reader={readAction}
